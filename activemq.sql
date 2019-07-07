@@ -11,7 +11,7 @@
  Target Server Version : 50726
  File Encoding         : 65001
 
- Date: 05/07/2019 23:07:33
+ Date: 07/07/2019 15:55:55
 */
 
 SET NAMES utf8mb4;
@@ -31,13 +31,14 @@ CREATE TABLE `iot_device`  (
   `code` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '激活码，第三方平台激活以及调用接口使用',
   `state` int(1) NULL DEFAULT 1 COMMENT '0在线，1下线',
   `last_online_time` datetime(0) NULL DEFAULT NULL COMMENT '最后在线',
+  `status` char(1) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '0' COMMENT '设备状态，0正常， 1锁定',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of iot_device
 -- ----------------------------
-INSERT INTO `iot_device` VALUES (1, 2, '1', '123456', '2019-07-03 09:18:19', NULL, NULL, 1, NULL);
-INSERT INTO `iot_device` VALUES (2, 2, '2', '123456', '2019-07-05 11:55:16', '2019-07-05 11:55:16', NULL, 1, NULL);
+INSERT INTO `iot_device` VALUES (1, 2, '1', '123456', '2019-07-03 09:18:19', NULL, NULL, 1, NULL, '0');
+INSERT INTO `iot_device` VALUES (2, 2, '2', '123456', '2019-07-05 11:55:16', '2019-07-05 11:55:16', NULL, 1, NULL, '0');
 
 SET FOREIGN_KEY_CHECKS = 1;
