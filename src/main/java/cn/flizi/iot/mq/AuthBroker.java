@@ -108,7 +108,8 @@ public class AuthBroker extends AbstractAuthenticationBroker {
             // 权限判断
             boolean flag = false;
             for (Principal principal : producerExchange.getConnectionContext().getSecurityContext().getPrincipals()) {
-                String name = "\"iot." + principal.getName() + ".";
+                String name = "iot." + principal.getName() + ".";
+                System.out.println(destination);
                 if (destination.startsWith(name)) {
                     flag = true;
                 }
@@ -134,7 +135,9 @@ public class AuthBroker extends AbstractAuthenticationBroker {
         if (!adminName.equals(username)) {
             boolean flag = false;
             for (Principal principal : context.getSecurityContext().getPrincipals()) {
-                String name = "\"iot." + principal.getName() + ".";
+                String name = "iot." + principal.getName() + ".";
+                System.out.println(destination);
+                System.out.println(name);
                 if (destination.startsWith(name)) {
                     flag = true;
                 }
