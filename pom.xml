@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.flizi.iot</groupId>
-    <artifactId>mq-security</artifactId>
+    <artifactId>mqtt-security</artifactId>
     <version>1.0</version>
     <build>
         <plugins>

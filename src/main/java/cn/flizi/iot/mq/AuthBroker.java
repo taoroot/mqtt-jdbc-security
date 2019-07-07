@@ -164,7 +164,7 @@ public class AuthBroker extends AbstractAuthenticationBroker {
                 throw new SecurityException("设备已被锁定");
             }
             return device;
-        } catch (EmptyResultDataAccessException e) {
+        } catch (Exception e) {
             throw new SecurityException("验证失败");
         }
     }

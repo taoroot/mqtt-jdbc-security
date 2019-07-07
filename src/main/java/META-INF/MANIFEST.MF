@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Class-Path: slf4j-api-1.7.25.jar guava-18.0.jar activemq-openwire-lega
+ cy-5.15.9.jar activemq-client-5.15.9.jar jackson-core-2.9.8.jar sprin
+ g-core-4.3.18.RELEASE.jar spring-beans-4.3.18.RELEASE.jar spring-tx-4
+ .3.18.RELEASE.jar activemq-broker-5.15.9.jar jackson-annotations-2.9.
+ 0.jar hawtbuf-1.11.jar spring-jdbc-4.3.18.RELEASE.jar commons-logging
+ -1.2.jar geronimo-j2ee-management_1.1_spec-1.0.1.jar activemq-jaas-5.
+ 15.9.jar jackson-databind-2.9.8.jar geronimo-jms_1.1_spec-1.1.1.jar
+Main-Class: 
+
